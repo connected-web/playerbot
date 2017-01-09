@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "promise-path": "^1.2.3"
   }
 }
