@@ -1,0 +1,28 @@
+{
+  "name": "playerbot",
+  "version": "1.0.0",
+  "description": "Playerbot for slack",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run playerbot",
+    "playerbot": "pm2 start index.js --name 'Playerbot'",
+    "test": "mocha --recursive",
+    "stop": "pm2 delete 'Playerbot'"
+  },
+  "keywords": [
+    "slack",
+    "bot",
+    "board",
+    "games"
+  ],
+  "author": "John Beech",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.0.5",
+    "slackbots": "^0.5.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
