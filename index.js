@@ -4,7 +4,6 @@ const tokens = require('./tokens.json');
 const playerbots = tokens.map(createPlayerbot);
 
 function createPlayerbot(config) {
-  const playerbot = api(options);
 
   const options = {
     slackbot: {
@@ -18,6 +17,7 @@ function createPlayerbot(config) {
       }
     }
   };
+  const playerbot = api(options);
 
   playerbot.load()
     .then(playerbot.connect);
